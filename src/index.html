@@ -1,0 +1,355 @@
+---
+title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+description: "Meta description for the page"
+permalink: "/"
+tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Critical styles are loaded first -->
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    {% if client.isProduction %}
+        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/local.css">
+        </noscript>
+
+    {% else %}
+        <link rel="stylesheet" href="/assets/css/local.css" />
+    {% endif %}
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- {% include "components/home-schema.html" %} -->
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-2150">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Maple Ridge New &amp; Used Building Materials</span>
+            <h1 class="cs-title">Affordable, Sustainable Materials for Every Project</h1>
+            <p class="cs-text">
+                Supplying new and reclaimed building materials to help homeowners and contractors save money while reducing waste.
+            </p>
+            <a href="" class="cs-button-solid cs-button1">Visit Our Yard</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/logos/2.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Sustainable Choice</h3>
+                </div>
+                <p class="cs-item-text">
+                    Reclaimed and surplus materials that keep quality products out of landfills and in your build.
+                </p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/logos/1.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Cost-Effective</h3>
+                </div>
+                <p class="cs-item-text">
+                    Save significantly on renovations and construction with affordable new and used materials.
+                </p>
+            </li>
+            <li class="cs-item">
+                <div class="cs-icon-group">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/logos/3.svg" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Doors, Windows &amp; More</h3>
+                </div>
+                <p class="cs-item-text">
+                    A constantly changing inventory of doors, windows, cabinets, fixtures, and building supplies.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" src="/assets/images/IMG_0159.JPG">
+        <source media="(min-width: 601px)" src="/assets/images/IMG_0159.JPG">
+        <img loading="lazy" decoding="async" src="/assets/images/IMG_0159.JPG" alt="wedding couple" width="1920" height="1162" aria-hidden="true">
+    </picture>
+</section>                  
+
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-2272">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" src="/assets/images/IMG_8458.JPG">
+                <source media="(min-width: 601px)" src="/assets/images/IMG_8458.JPG">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_8458.JPG" alt="reclaimed building materials" width="272" height="337">
+            </picture>
+
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" src="/assets/images/IMG_2518.JPG">
+                <source media="(min-width: 601px)" src="/assets/images/IMG_2518.JPG">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_2518.JPG" alt="salvaged doors and windows" width="243" height="367">
+            </picture>
+        </div>
+
+        <div class="cs-content">
+            <span class="cs-topper">About MRNU</span>
+            <h2 class="cs-title">Quality Reclaimed Materials for Smarter Renovations</h2>
+            <p class="cs-text">
+                Maple Ridge New &amp; Used Building Materials is a community-driven supplier focused on sustainability, affordability, and quality. Since opening in 2019, we’ve helped homeowners, contractors, and designers find new and reusable building materials that save money and reduce waste.
+            </p>
+            <p class="cs-text">
+                From doors and windows to cabinets and architectural pieces, our ever-changing inventory offers practical solutions with character—perfect for renovations, restorations, and custom projects of all sizes.
+            </p>
+            <a href="" class="cs-button-solid">Read More</a>
+        </div>
+    </div>
+
+    <!--Floating Element-->
+    <img class="cs-flower" loading="lazy" decoding="async" src="/assets/svgs/logos/recycle-logo (2).svg" alt="" width="244" height="186" aria-hidden="true">
+</section>                  
+                                
+                   
+
+
+<!-- ============================================ -->
+<!--                    Inventory                -->
+<!-- ============================================ -->
+
+<section id="services-1728">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Inventory</span>
+                <h2 class="cs-title">What We Carry</h2>
+            </div>
+            <p class="cs-text">
+                Our inventory is always changing, offering a wide range of new and reclaimed building materials for renovations, repairs, and custom projects. Whether you’re a homeowner or contractor, you’ll find quality materials at a fraction of retail prices.
+            </p>
+        </div>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Windows</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img decoding="async" src="/assets/images/IMG_8458.JPG"
+                         alt="interior and exterior doors"
+                         width="384" height="480" loading="lazy">
+                </picture>
+            </li>
+
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Interior Doors</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img decoding="async" src="/assets/images/IMG_2518.JPG"
+                         alt="salvaged windows"
+                         width="384" height="480" loading="lazy">
+                </picture>
+            </li>
+
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Exterior Doors</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img decoding="async" src="/assets/images/IMG_4030.JPG"
+                         alt="kitchen and bathroom cabinets"
+                         width="384" height="480" loading="lazy">
+                </picture>
+            </li>
+
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Commerical Doors</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img decoding="async" src="/assets/images/IMG_9526.JPG"
+                         alt="lighting and hardware"
+                         width="384" height="480" loading="lazy">
+                </picture>
+            </li>
+
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Cabinets</h3>
+                </a>
+                <picture class="cs-picture">
+                    <img decoding="async" src="/assets/images/IMG_3894.JPG"
+                         alt="architectural salvage materials"
+                         width="384" height="480" loading="lazy">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+                                
+
+   
+ <!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Gallery</span>
+<h2 class="cs-title">Materials With a Second Life</h2>
+<p class="cs-text">
+    A look at our ever-changing inventory of reclaimed building materials, salvaged pieces, and unique finds available in our yard.
+</p>
+        </div>
+        <ul class="cs-image-group">
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_1746 2.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_1746 2.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_1746 2.JPG" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_9526.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_9526.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_9526.JPG" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_1746 2.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_1746 2.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_1746 2.JPG" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_9526.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_9526.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_9526.JPG" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_1746 2.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_1746 2.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_1746 2.JPG" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_9526.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_9526.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_9526.JPG" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 1 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_1746 2.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_1746 2.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_1746 2.JPG" alt="fancy house" width="346" height="346">
+                </picture>
+            </li>
+            <!-- Image 2 -->
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" src="/assets/images/IMG_9526.JPG">
+                    <source media="(min-width: 601px)" src="/assets/images/IMG_9526.JPG">
+                    <img loading="lazy" decoding="async" src="/assets/images/IMG_9526.JPG" alt="modern house" width="346" height="346">
+                </picture>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">View Full Gallery</a>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-67">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Reviews</span>
+            <h2 class="cs-title">
+                What Our Customers Say
+            </h2>
+            <p class="cs-text">
+                Homeowners, contractors, and designers trust MRNU for quality reclaimed materials, fair pricing, and friendly, knowledgeable service.
+            </p>
+        </div>
+
+        <ul class="cs-card-group">
+            <!-- Review 1 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                     src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
+
+                <p class="cs-item-text">
+                    MRNU is my go-to spot for doors and windows. The inventory is always changing, prices are fair, and the staff is incredibly helpful.
+                </p>
+
+                <div class="cs-info">
+                    <div class="cs-flex-group">
+                        <span class="cs-name">Jason M.</span>
+                        <span class="cs-desc">Homeowner</span>
+                    </div>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                         src="/assets/svgs/stars.svg" alt="5 star rating" width="96" height="16">
+                </div>
+            </li>
+
+            <!-- Review 2 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                     src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
+
+                <p class="cs-item-text">
+                    Great selection of reclaimed materials and unique finds you won’t see at big box stores. Perfect for renovation projects.
+                </p>
+
+                <div class="cs-info">
+                    <div class="cs-flex-group">
+                        <span class="cs-name">Amanda R.</span>
+                        <span class="cs-desc">Contractor</span>
+                    </div>
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                         src="/assets/svgs/stars.svg" alt="5 star rating" width="96" height="16">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+{% endblock %}
