@@ -8,8 +8,6 @@ permalink: "/windowsandpatio/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/windowsandpatio.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -28,21 +26,238 @@ permalink: "/windowsandpatio/"
         </div>
         <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
+
+    <!-- ============================================ -->
+<!--                 Side by Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-2316">
+    <div class="cs-container">
+        <div class="cs-content cs-content1">
+            <picture class="cs-picture cs-picture1">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+            </picture>
+
+            <div class="cs-wrapper cs-wrapper1">
+                <span class="cs-topper">New Windows</span>
+
+                <h2 class="cs-title">
+                    Quality New Windows at Affordable Prices
+                </h2>
+
+                <p class="cs-text">
+                    MRNU carries a selection of new windows for renovations,
+                    additions, new construction, rental properties, garages,
+                    workshops, and more. Our available sizes and styles change
+                    regularly, giving customers access to quality products at
+                    competitive prices.
+                </p>
+
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <strong>Multiple Sizes:</strong>
+                        Browse a range of common and unique window dimensions.
+                    </li>
+
+                    <li class="cs-li">
+                        <strong>Different Styles:</strong>
+                        Availability may include fixed, sliding, casement, and
+                        opening windows.
+                    </li>
+
+                    <li class="cs-li">
+                        <strong>Affordable Options:</strong>
+                        Save on quality new windows for projects of all sizes.
+                    </li>
+
+                    <li class="cs-li">
+                        <strong>Local Assistance:</strong>
+                        Our knowledgeable team can help you find the right fit
+                        for your project.
+                    </li>
+                </ul>
+
+                <div class="cs-button-box">
+                    <a class="cs-link" href="tel:+16043802111">
+                        <picture class="cs-icon-wrapper">
+                            <img
+                                class="cs-icon"
+                                loading="lazy"
+                                decoding="async"
+                                src="/assets/svgs/phone.svg"
+                                alt=""
+                                width="24"
+                                height="24"
+                                aria-hidden="true"
+                            >
+                        </picture>
+
+                        <div class="cs-info">
+                            <span class="cs-link-content">
+                                Questions About Availability?
+                            </span>
+                            <span class="cs-phone">604-380-2111</span>
+                        </div>
+                    </a>
+
+                    <a class="cs-link" href="/contact/">
+                        <picture class="cs-icon-wrapper">
+                            <img
+                                class="cs-icon"
+                                loading="lazy"
+                                decoding="async"
+                                src="/assets/svgs/location.svg"
+                                alt=""
+                                width="24"
+                                height="24"
+                                aria-hidden="true"
+                            >
+                        </picture>
+
+                        <div class="cs-info">
+                            <span class="cs-link-content">Visit Our Yard</span>
+                            <span class="cs-phone">Maple Ridge, BC</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cs-content cs-content2">
+            <picture class="cs-picture cs-picture2">
+               
+                <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/IMG_4383.jpg"
+                    alt="Selection of new window sizes at MRNU"
+                    width="608"
+                    height="406"
+                >
+            </picture>
+
+            <div class="cs-wrapper cs-wrapper2">
+                <h3 class="cs-h3">View Our Available Window Sizes</h3>
+
+                <p class="cs-text">
+                    Looking for a particular size? Download our current window
+                    size list or contact our team to confirm availability before
+                    visiting. Inventory can change quickly as new products arrive
+                    and available windows are sold.
+                </p>
+
+                <a
+                    class="cs-button-solid"
+                    href="/assets/documents/mrnu-window-size-list.pdf"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Download Window Size List
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1741">
+    <div class="cs-gallery">
+        <!--Picture 1-->
+        <picture class="cs-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+        </picture>
+        <!--Picture 2-->
+        <picture class="cs-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+        </picture>
+        <!--Picture 3-->
+        <picture class="cs-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+        </picture>
+        <!--Picture 4-->
+        <picture class="cs-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+        </picture>
+        <!--Picture 5-->
+        <picture class="cs-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_4380.jpg" alt="New residential windows available at MRNU" width="608" height="406">
+        </picture>
+    </div>
+</section>
+
+
+</section>
+
+
+                                
+
+<!-- ============================================ -->
+<!--              Side By Side Reverse            -->
+<!-- ============================================ -->
+
+<section id="sbsr-2326">
+    <div class="cs-container">
+        <div class="cs-container">
+    <div class="cs-content">
+        <span class="cs-topper">New Patio Sliding Doors</span>
+
+        <h2 class="cs-title">
+            Brighten Your Home with a Quality Patio Door
+        </h2>
+
+        <p class="cs-text">
+            Whether you're replacing an existing patio door or completing a new
+            build, MRNU offers a selection of quality new patio sliding doors at
+            competitive prices. Our inventory is updated regularly with a variety
+            of sizes and styles to suit your project.
+        </p>
+
+        <h3 class="cs-h3">Why Choose MRNU?</h3>
+
+        <ul class="cs-ul">
+            <li class="cs-li">
+                Affordable pricing on quality new patio doors.
+            </li>
+
+            <li class="cs-li">
+                A variety of sizes and styles available.
+            </li>
+
+            <li class="cs-li">
+                Ideal for renovations, additions, and new construction.
+            </li>
+
+            <li class="cs-li">
+                Friendly, knowledgeable staff ready to help.
+            </li>
+        </ul>
+
+        <a href="/contact/" class="cs-button-solid">
+            Contact Our Team
+        </a>
+    </div>
+</div>
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_9731.jpg" alt="wedding photoshoot" width="297" height="366">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <img loading="lazy" decoding="async" src="/assets/images/IMG_9731.jpg" alt="wedding photoshoot" width="297" height="366">
+            </picture>
+            
+        </div>
+    </div>
+
+
+</section>
+                                
+                                
+                                
 
    
 
