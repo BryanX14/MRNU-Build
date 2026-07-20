@@ -8,8 +8,6 @@ permalink: "/delivery/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/delivery.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -28,21 +26,149 @@ permalink: "/delivery/"
         </div>
         <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <img src="/assets/images/privacyandterms/privacyhead.jpg" alt="Image of private banner" width="2500" height="628" loading="eager" decoding="async">
         </picture>
     </div>
+
+    <!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<section id="pricing-975">
+    <div class="cs-container">
+<div id="cs-content-831">
+    <span class="cs-topper">Delivery</span>
+    <h2 class="cs-title">Reliable Delivery Throughout the Lower Mainland</h2>
+    <p class="cs-text">
+        We offer dependable delivery for building materials across Maple Ridge and the surrounding communities. Whether you're purchasing a single door or a full load of supplies, we'll get your order to your home, business, or job site safely and on time.
+    </p>
+</div>
+            
+       <div class="cs-menu">
+    <!-- Left Column -->
+    <ul class="cs-menu-group">
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Maple Ridge &#40; Local &#41;</span>
+                <span class="cs-price">$100</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Pitt Meadows</span>
+                <span class="cs-price">$60</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Mission</span>
+                <span class="cs-price">$75</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Langley</span>
+                <span class="cs-price">$80</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Surrey</span>
+                <span class="cs-price">$90</span>
+            </h3>
+        </li>
+    </ul>
+
+    <!-- Right Column -->
+    <ul class="cs-menu-group">
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Coquitlam</span>
+                <span class="cs-price">$80</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Port Coquitlam</span>
+                <span class="cs-price">$80</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Abbotsford</span>
+                <span class="cs-price">$100</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Chilliwack</span>
+                <span class="cs-price">$125</span>
+            </h3>
+        </li>
+
+        <li class="cs-menu-item">
+            <h3 class="cs-h3">
+                <span class="cs-header">Outside These Areas</span>
+                <span class="cs-price">Call</span>
+            </h3>
+        </li>
+    </ul>
+</div>
+</div>                          
+</section>
+
+<!-- ============================================ -->
+<!--                     Steps                    -->
+<!-- ============================================ -->
+
+<section id="steps-2127">
+    <div class="cs-container">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/calendar.svg" alt="Calendar icon" width="20" height="20" aria-hidden="true" />
+            <h3 class="cs-h3">First Come, First Served</h3>
+            <span class="cs-item-text">
+                Deliveries are scheduled on a first come, first served basis. We recommend booking your delivery early to secure your preferred date.
+            </span>
+        </li>
+
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/truck.svg" alt="Delivery truck icon" width="20" height="20" aria-hidden="true" />
+            <h3 class="cs-h3">Driveway Drop-Off</h3>
+            <span class="cs-item-text">
+                All deliveries are made to your driveway or another safe, accessible outdoor location for quick and efficient unloading.
+            </span>
+        </li>
+
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/home.svg" alt="Home icon" width="20" height="20" aria-hidden="true" />
+            <h3 class="cs-h3">No Indoor Deliveries</h3>
+            <span class="cs-item-text">
+                Our delivery team does not enter homes, garages, or buildings. Please plan accordingly before your delivery arrives.
+            </span>
+        </li>
+
+        <li class="cs-item">
+            <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check.svg" alt="Check mark icon" width="20" height="20" aria-hidden="true" />
+            <h3 class="cs-h3">Prepare Your Drop-Off Area</h3>
+            <span class="cs-item-text">
+                Please ensure your driveway or designated drop-off area is clear and accessible so we can deliver your order safely and efficiently.
+            </span>
+        </li>
+    </ul>
+</div>
+</section>
+                                
+
+
+                                
 
    
 

@@ -1,0 +1,316 @@
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #pricing-975 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-menu {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            column-gap: calc(20 / 16 * 1rem);
+            /* 28px - 40px */
+            row-gap: clamp(1.75rem, 3vw, 2.5rem);
+        }
+
+        .cs-menu-group {
+            width: 100%;
+            max-width: calc(600 / 16 * 1rem);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 28px - 40px */
+            gap: clamp(1.75rem, 3vw, 2.5rem);
+        }
+
+        .cs-menu-item {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-h3 {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            gap: calc(24 / 16 * 1rem);
+
+            &:before {
+                /* grey line */
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: #e8e8e8;
+                opacity: 1;
+                display: block;
+                position: absolute;
+                top: calc(13 / 16 * 1rem);
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        .cs-header {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2vw, 1.5625rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            text-align: inherit;
+            max-width: calc(400 / 16 * 1rem);
+            padding-right: calc(8 / 16 * 1rem);
+            color: var(--headerColor);
+            background-color: #fff;
+        }
+
+        .cs-price {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            font-weight: 400;
+            padding-left: calc(8 / 16 * 1rem);
+            color: var(--headerColor);
+            background-color: #fff;
+        }
+
+        .cs-menu-text {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            text-align: inherit;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #pricing-975 {
+        .cs-menu {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cs-menu-group {
+            width: 100%;
+        }
+    }
+}
+              
+
+/*-- -------------------------- -->
+<---         CS-Content         -->
+<--- -------------------------- -*/
+
+/* you can place this CSS group in your global stylesheet that is loaded on every page of the site so all you need to do is copy and paste the HTML into any section and it will all work. Or piece it inside the media queries in whatever section you want to add it to. You can also remove the cs-topper, cs-title, and cs-text and if they aren't already in your global stylesheet you can paste them outside these media queries so all cs-topper, cs-title, and cs-text on your site will pull from 1 place. */
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    #cs-content-831 {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+}
+
+/*-- -------------------------- -->
+<---            Steps           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #steps-2127 {
+        padding: var(--sectionPadding);
+        background-color: var(--headerColor);
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(704/16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .cs-item {
+            text-align: center;
+            list-style: none;
+            width: 100%;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            padding: calc(32/16 * 1rem) 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-column: span 12;
+            position: relative;
+            z-index: 1;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            /* bottom border */
+            &::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                /* to change the color of the bottom border, adjust the second color (at 50%). the first and third will blend the color to transparent */
+                /* note you'll also have to change the color in the tablet media query when the lines go vertical */
+                background: linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgb(186, 186, 186, 1) 50%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        .cs-icon {
+            /* 48px - 60px */
+            width: clamp(3rem, 6vw, 3.75rem);
+            height: auto;
+            /* 24px - 40px */
+            margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+            display: block;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2vw, 1.5625rem);
+            font-weight: bold;
+            line-height: 1.2em;
+            margin: 0 0 calc(16/16 * 1rem) 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-item-text {
+            /* 14px - 20px */
+            font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            max-width: calc(300/16 * 1rem);
+            padding: 0;
+            color: var(--bodyTextColorWhite);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #steps-2127 {
+        .cs-container {
+            max-width: calc(1720/16 * 1rem);
+        }
+
+        .cs-card-group {
+            row-gap: calc(48/16 * 1rem);
+        }
+
+        .cs-item {
+            padding: 0 calc(16/16 * 1rem);
+            grid-column: span 3;
+
+            &::after {
+                width: 1px;
+                height: 100%;
+                background: linear-gradient(
+                    0deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgb(186, 186, 186, 1) 50%,
+                    rgba(255, 255, 255, 0) 100%
+                );
+                right: 0;
+                left: initial;
+            }
+        }
+
+        .cs-h3 {
+            max-width: 13ch;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #steps-2127 {
+        .cs-item {
+            /* 20px - 30px */
+            padding: 0 clamp(1.25rem, 2.5vw, 1.875rem);
+        }
+    }
+}
+                                
+
+
+
+
+                                
+                                
