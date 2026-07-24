@@ -6,6 +6,267 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-1461 {
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
+
+        .cs-flower {
+            width: clamp(8rem, 32vw, 30rem); /* bigger overall */
+            height: auto;
+            display: none;
+            position: absolute;
+            right: -2rem;   /* less aggressive push */
+            bottom: -2rem;  /* bring it up slightly */
+            z-index: -1;
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280/16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: calc(522/16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            margin-bottom: calc(16/16 * 1rem);
+            opacity: .8;
+            &:last-of-type {
+                margin-bottom: calc(32/16 * 1rem);
+            }
+        }
+
+        .cs-ul {
+            width: 100%;
+            margin: 0 0 calc(32/16 * 1rem) 0;
+            padding-left: calc(20/16 * 1rem);
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(8/16 * 1rem);
+        }
+
+        .cs-li {
+            font-size: var(--bodyFontSize);
+            font-weight: 600;
+            line-height: 1.5em;
+            list-style: none;
+            text-align: left;
+            width: 100%;
+            max-width: calc(400/16 * 1rem);
+            margin: 0;
+            color: var(--header);
+            opacity: 0.8;
+            position: relative;
+
+            &:before {
+                /* bullet */
+                content: "";
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: currentColor;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: calc(10/16 * 1rem);
+                left: calc(-15/16 * 1rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: calc(16/16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: calc(150/16 * 1rem);
+            padding: 0 calc(24/16 * 1rem);
+            background-color: var(--primary);
+            border-radius: calc(4/16 * 1rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4/16 * 1rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-image-group {
+            /* scaling the font size with the view width, removed at desktop */
+            font-size: min(2.23vw, .83em);
+            /* using ems so we can use font size to scale the whole section */
+            width: calc(650/16 * 1em);
+            height: calc(729/16 * 1em);
+            position: relative;
+        }
+
+        .cs-picture {
+            border-radius: calc(24/16 * 1em);
+            /* clips img tag corners */
+            overflow: hidden;
+            position: absolute;
+            display: block;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* makes image act like a background image */
+                object-fit: cover;
+            }
+        }
+
+        .cs-picture1 {
+            width: calc(522/16 * 1em);
+            height: calc(729/16 * 1em);
+            left: 0;
+            top: 0;
+        }
+
+        .cs-picture2 {
+            width: calc(378/16 * 1em);
+            height: calc(460/16 * 1em);
+            right: 0;
+            bottom: calc(100/16 * 1em);
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                /* prevents the mouse from interacting with it */
+                pointer-events: none;
+                opacity: .88;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -2;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-1461 {
+        .cs-container {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: calc(52/16 * 1rem);
+        }
+
+        .cs-content {
+            width: 40%;
+            padding: calc(48/16 * 1rem) 0;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            align-self: center;
+        }
+
+        .cs-image-group {
+            font-size: 1rem;
+            width: 50vw;
+            max-width: calc(650/16 * 1rem);
+            height: auto;
+            /* 580px - 729px */
+            min-height: clamp(36.25rem, 50vw, 45.5625rem);
+            flex: none;
+            display: flex;
+
+        }
+
+        .cs-picture1 {
+            width: 83%;
+            height: auto;
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+
+        .cs-picture2 {
+            width: 60%;
+            height: 57%;
+        }
+    }
+}
+                                
+
+/*-- -------------------------- -->
 <---    Side By Side Reverse    -->
 <--- -------------------------- -*/
 
@@ -154,15 +415,7 @@
             }
         }
 
-        .cs-flower {
-            width: clamp(8rem, 32vw, 30rem); /* bigger overall */
-            height: auto;
-            display: none;
-            position: absolute;
-            right: -2rem;   /* less aggressive push */
-            bottom: -2rem;  /* bring it up slightly */
-            z-index: -1;
-        }
+        
     }
 }
 
@@ -239,7 +492,7 @@
         /* changes side padding from the 1rem in the root css file to this clamp because it looks more proportional with this stitch's layout */
         padding-left: clamp(1rem, 3vw, 6.25rem);
         padding-right: clamp(1rem, 3vw, 6.25rem);
-        background-color: var(--secondary);
+        background-color: var(--headerColor);
         position: relative;
 
         .cs-container {
@@ -592,6 +845,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: 5px;
             }
         }
 

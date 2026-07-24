@@ -27,86 +27,97 @@ permalink: "/contact/"
         <!--Background Image-->
         <picture class="cs-background">
             <!--Mobile Image-->
-             <img src="/assets/images/cabinets.jpg" alt="Kitchen cabinets at MRNU" width="2500" height="628" loading="eager" decoding="async">
+             <img src="/assets/images/contact/mrnu-contact.webp" alt="Kitchen cabinets at MRNU" width="2500" height="628" loading="eager" decoding="async">
         </picture>
     </div>
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
 
-    <section id="cs-contact-265">
-        <div class="cs-container">
-            <div class="cs-left-section">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact MRNU</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Have a question about our products, current inventory, salvage services, or delivery options? Send us a message or give us a call and our team will be happy to help.
-                    </p>
-                </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
-                    <label>
-                        First Name
-                        <input required type="text" id="name-265" name="name" placeholder="Name">
-                    </label>
-                    <label>
-                        Email
-                        <input required type="text" id="email-265" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        Phone
-                        <input required type="text" id="phone-265" name="phone" placeholder="Phone">
-                    </label>
-                    <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
-                    </label>
-                    <label class="cs-label-message">
-                        Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
-                    </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
-                </form>
+<section id="cs-contact-490">
+    <div class="cs-container">
+        <!-- Contact Info -->
+        <div class="cs-content">
+            <span class="cs-topper">Contact MRNU</span>
+            <h2 class="cs-title">Get in Touch</h2>
+            <p class="cs-text">
+                Have a question about our inventory, delivery, or a specific product? Give us a call, send us an email, or stop by our yard. Our team is always happy to help you find the right building materials for your next project.
+            </p>
+
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a href="https://maps.google.com/?q=23332+River+Road,+Maple+Ridge,+BC+V2W+1B6" class="cs-link" target="_blank" rel="noopener">
+                23332 River Road <br>Maple Ridge, BC V2W 1B6
+            </a>
+
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a href="mailto:ryanmrnu@shaw.ca" class="cs-link">mrnu@shaw.ca</a>
+
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a href="tel:6043802111" class="cs-link">(604) 380-2111</a>
+
+            <!--Social Buttons-->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="Visit Google Business Profile" href="https://share.google/wdQBMKauC8Zia4zl8" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="Google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="Visit Facebook Page" href="https://www.facebook.com/people/Maple-Ridge-New-Used-Building-Materials/100057334754351/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="Facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="Visit Instagram Profile" href="https://www.instagram.com/mrnu.inc/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="Instagram" width="11" height="11">
+                </a>
             </div>
-            <div class="cs-right-section">
-
-    <span class="cs-header">Address</span>
-    <a
-        class="cs-link"
-        href="{{ client.address.mapLink }}"
-        target="_blank"
-        rel="noopener"
-    >
-        {{ client.address.lineOne }}<br>
-        {{ client.address.city }}, {{ client.address.state }}
-        {{ client.address.zip }}
-    </a>
-
-
-    <span class="cs-header">Call Us</span>
-    <a class="cs-link" href="tel:{{ client.phoneForTel }}">
-        {{ client.phoneFormatted }}
-    </a>
-
-    <span class="cs-header">Email</span>
-    <a class="cs-link" href="mailto:{{ client.email }}">
-        {{ client.email }}
-    </a>
-
-    <picture class="cs-bg-picture">
-        <img
-            src="/assets/images/cabinets.jpg"
-            alt="Kitchen cabinets and building materials at MRNU"
-            width="2500"
-            height="628"
-            loading="lazy"
-            decoding="async"
-        >
-    </picture>
-
-</div>
         </div>
-    </section>
+
+        <!-- Form -->
+        <form id="cs-form-490" name="Contact Form" method="post">
+            <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="First Name">
+            </label>
+
+            <label class="cs-label">
+                Email
+                <input class="cs-input" required type="email" id="email-490" name="email" placeholder="Email Address">
+            </label>
+
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="tel" id="phone-490" name="phone" placeholder="Phone Number">
+            </label>
+
+            <label class="cs-label">
+                How did you hear about us?
+                <input class="cs-input" type="text" id="find-490" name="product" placeholder="Google, Facebook, Instagram...">
+            </label>
+
+            <label class="cs-label-message">
+                Message
+                <textarea class="cs-input" required name="message" id="message-490" placeholder="Tell us how we can help..."></textarea>
+            </label>
+
+            <button class="cs-button-solid" type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Map                       -->
+<!-- ============================================ -->
+
+<section id="map-1834">
+    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/brown-pin.svg" alt="icon" decoding="async" width="52" height="52" aria-hidden="true">
+    <div class="cs-background">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.243631330008!2d-122.57290534712124!3d49.19593765607949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d3740db24291%3A0x309fc5dcaa1aee0a!2sMaple%20Ridge%20New%20%26%20Used%20Building%20Materials!5e0!3m2!1sen!2sca!4v1784929929164!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>    </div>
+</section>
+                                
+                                
+                                
+                                               
+
 
 {% endblock %}
