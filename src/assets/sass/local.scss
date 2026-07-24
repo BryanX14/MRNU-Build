@@ -689,6 +689,10 @@
             align-items: center;
         }
 
+        .cs-text{
+            text-align: left;
+        }
+
         .cs-card-group {
             padding: 0;
             margin: 0;
@@ -829,24 +833,4 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #reviews-67 {
-            .cs-title,
-            .cs-text,
-            .cs-item-text,
-            .cs-name {
-                color: var(--bodyTextColorWhite);
-            }
 
-            .cs-item {
-                background: rgba(0, 0, 0, 0.2);
-            }
-
-            .cs-desc {
-                color: var(--primaryLight);
-            }
-        }
-    }
-}
