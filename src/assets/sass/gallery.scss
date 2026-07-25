@@ -31,7 +31,11 @@
 
         .cs-title {
             margin: 0;
-            max-width: 20ch;
+            max-width: 40ch;
+        }
+
+        .cs-text{
+            margin-top: 20px;
         }
 
         .cs-image-group {
@@ -68,6 +72,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: 5px;
             }
         }
 
