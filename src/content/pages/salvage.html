@@ -8,8 +8,6 @@ permalink: "/salvage/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/salvage.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -23,27 +21,288 @@ permalink: "/salvage/"
             <span class="cs-int-title">Salvage</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
-                <a href="/salvage/" class="cs-link cs-active">Salvage</a>
+                <a href="/delivery/" class="cs-link cs-active">Salvage</a>
             </div>
         </div>
         <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <img src="/assets/images/services/mrnu-delivery.webp" alt="Image of tin roofing delivery" width="1428" height="1071" loading="eager" decoding="async">
         </picture>
     </div>
 
+  <!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1977">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Salvage Services</span>
+            <h2 class="cs-title">Residential & Commercial Building Material Salvage</h2>
+            <p class="cs-text">
+                At MRNU, we believe quality building materials deserve a second life. We recover, purchase, and accept donations of reusable materials from residential and commercial renovation and demolition projects throughout the Lower Mainland. By keeping these materials out of the landfill, we help homeowners, contractors, and DIYers save money while reducing waste.
+            </p>
+        </div>
+
+        <div class="cs-wrapper">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-li-picture">
+                        <!-- Salvage Icon -->
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">On-Site Salvage</h3>
+                        <p class="cs-li-text">
+                            Our experienced salvage team carefully removes reusable cabinets, doors, windows, lighting, fixtures, railings, lumber, and more from homes and commercial buildings before renovation or demolition.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="cs-li">
+                    <picture class="cs-li-picture">
+                        <!-- Dollar Icon -->
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Sell or Donate</h3>
+                        <p class="cs-li-text">
+                            Have quality used building materials? We purchase select items and gladly accept donations that meet our current inventory needs, helping keep valuable materials in circulation.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="cs-li">
+                    <picture class="cs-li-picture">
+                        <!-- Camera Icon -->
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Easy Drop-Off Process</h3>
+                        <p class="cs-li-text">
+                            Before bringing materials to our yard, please email us a few photos. This allows our team to review the items and confirm whether we can accept them before you make the trip.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Large Renovation or Demolition?</h3>
+                        <p class="cs-item-text">
+                            Planning a full-house renovation or commercial demolition? Contact us before your project begins to see if our salvage team can safely recover reusable materials on-site.
+                        </p>
+                    </div>
+
+                    <a href="/contact/" class="cs-link">Request a Salvage Consultation</a>
+
+                    <picture class="cs-picture">
+                        <img class="cs-image" loading="lazy" decoding="async"
+                        src="/assets/images/services/mrnu-salvage1.png" alt="icon"
+                        width="181" height="102">
+                    </picture>
+                </li>
+
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Commonly Accepted Materials</h3>
+                        <p class="cs-item-text">
+                            We accept a wide range of reusable building materials, including cabinets, doors, windows, patio doors, appliances, and more.*
+                        </p>
+                    </div>
+
+                    <a href="#table-1855" class="cs-link">View Accepted Materials</a>
+
+                    <picture class="cs-picture">
+                        <img class="cs-image" loading="lazy" decoding="async"
+                        src="/assets/images/services/mrnu-salvage2.png" alt="icon" width="181"
+                        height="102">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cs-card-container">
+            <picture class="cs-card-picture">
+                <img loading="lazy" decoding="async" src="/assets/images/index/mrnu-building.webp" alt="Exterior of Maple Ridge New & Used Building Materials" width="477" height="478">
+            </picture>
+
+            <div class="cs-card-content">
+                <h2 class="cs-h2">Have Building Materials to Sell, Donate, or Salvage?</h2>
+
+                <p class="cs-card-text">
+                    Whether you're replacing a single door or clearing out an entire property, we'd love to hear from you. Email us photos of your materials or give us a call before dropping them off. All materials are inspected upon arrival, and acceptance is based on their condition and our current inventory needs.
+                </p>
+
+                <div class="cs-button-flex">
+                    <a class="cs-button-solid" href="/contact/">Contact Our Team</a>
+
+                    <a class="cs-phone" href="tel:6043802111">
+                        <picture class="cs-card-pic">
+                            <img class="cs-card-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/white-phone.svg" decoding="async" alt="" width="20" height="20" loading="lazy">
+                        </picture>
+
+                        <div class="cs-phone-wrapper">
+                            <span class="cs-link-content">Call MRNU Today</span>
+                            <span class="cs-phone-number">604-380-2111</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Table                     -->
+<!-- ============================================ -->
+
+<!--
+    To add additional tables, copy and paste the cs-button and change it's data-filter to th next number, in this case it's "seven". Do the same to the cs-table-wrapper and its data-category number. And thats it!
+-->
+
+<section id="table-1855">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Salvage Services</span>
+            <h2 class="cs-title">Accepted Building Materials</h2>
+           
+            <div class="cs-button-group">
+                <button class="cs-button cs-active" data-filter="one">
+                    Accepted Items
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Not Accepted
+                </button>
+            </div>
+        </div>
+
+        <!-- Accepted Items -->
+        <div class="cs-table-wrapper" data-category="one">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Item</th>
+                        <th class="cs-th" scope="col">Condition</th>
+                        <th class="cs-th" scope="col">Notes</th>
+                    </tr>
+                </thead>
+
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Kitchen & Bathroom Cabinets</td>
+                        <td class="cs-td">Good Condition</td>
+                        <td class="cs-td">Complete sets preferred</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Vinyl Windows</td>
+                        <td class="cs-td">10 Years or Newer</td>
+                        <td class="cs-td">Clean and undamaged</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Vinyl Patio Doors</td>
+                        <td class="cs-td">10 Years or Newer</td>
+                        <td class="cs-td">Sliding or French doors</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Interior Doors</td>
+                        <td class="cs-td">Good Condition</td>
+                        <td class="cs-td">No major damage</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Exterior Doors</td>
+                        <td class="cs-td">Good Condition</td>
+                        <td class="cs-td">Complete units preferred</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Appliances</td>
+                        <td class="cs-td">10 Years or Newer</td>
+                        <td class="cs-td">Working condition</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Aluminum Railings</td>
+                        <td class="cs-td">Good Condition</td>
+                        <td class="cs-td">Residential or commercial</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Electrical Breaker Panels</td>
+                        <td class="cs-td">Subject to Inspection</td>
+                        <td class="cs-td">Must be complete</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Single-Pane Wood Windows</td>
+                        <td class="cs-td">Good Condition</td>
+                        <td class="cs-td">Limited acceptance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Not Accepted -->
+        <div class="cs-table-wrapper cs-hidden" data-category="two">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Item</th>
+                        <th class="cs-th" scope="col">Reason</th>
+                    </tr>
+                </thead>
+
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Toilets & Urinals</td>
+                        <td class="cs-td">Cannot be accepted</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Aluminum Windows</td>
+                        <td class="cs-td">Not currently accepted</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Aluminum Patio Doors</td>
+                        <td class="cs-td">Not currently accepted</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Drywall</td>
+                        <td class="cs-td">Cannot be reused</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Brass Door Hardware</td>
+                        <td class="cs-td">Not currently accepted</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Furniture</td>
+                        <td class="cs-td">Outside our inventory</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Loose Glass & Mirrors</td>
+                        <td class="cs-td">Safety concerns</td>
+                    </tr>
+
+                    <tr class="cs-tr">
+                        <td class="cs-td">Wood Garage Doors</td>
+                        <td class="cs-td">Not currently accepted</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-table-bg.png" alt="" width="995" height="1920" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                
+                                                             
    
 
 {% endblock %}
