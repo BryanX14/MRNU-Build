@@ -179,6 +179,7 @@
             height: calc(460/16 * 1em);
             right: 0;
             bottom: calc(100/16 * 1em);
+            border: 12px solid var(--bodyTextColorWhite);
         }
 
         .cs-background {
@@ -756,11 +757,8 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #gallery-45 {
+    #gallery-1086 {
         padding: var(--sectionPadding);
-        position: relative;
-        /* Prevents overflow from the image going off screen */
-        overflow: hidden;
 
         .cs-container {
             width: 100%;
@@ -783,137 +781,140 @@
             align-items: center;
         }
 
-        .cs-text{
-            text-align: left;
+        .cs-title {
+            margin: 0;
         }
 
         .cs-image-group {
-            margin: 0;
-            padding: 0;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            /* changes to 1280px at large desktop */
+            max-width: calc(784 / 16 * 1rem);
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(20, minmax(9vw, 1fr));
             /* 16px - 20px */
-            gap: clamp(1rem, 1.5vw, 1.25rem);
-        }
-
-        .cs-item {
-            list-style: none;
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 1;
-            margin: 0;
-            position: relative;
-            display: block;
-
-            &:hover {
-                .cs-hover-box {
-                    opacity: 1;
-                }
-
-                .cs-icon {
-                    /* return to original position */
-                    transform: rotateY(0);
-                }
-
-                .cs-h3 {
-                    opacity: 1;
-                    /* Return to original position */
-                    transform: translateY(0);
-                }
-
-                .cs-hover-box-text {
-                    opacity: 1;
-                    /* Return to original position */
-                    transform: translateY(0);
-                }
-            }
+            gap: clamp(1rem, 2vw, 1.25rem);
         }
 
         .cs-picture {
-            margin: auto;
             width: 100%;
             height: 100%;
             display: block;
             position: relative;
 
             img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
                 width: 100%;
-                object-fit: cover;
-                border-radius: 5px;
-            }
-        }
-
-        .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            margin: 0;
-            color: #fff;
-            min-width: calc(150 / 16 * 1rem);
-            padding: 0 calc(24 / 16 * 1rem);
-            background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-
-            &:before {
-                content: "";
-                position: absolute;
                 height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
+                object-fit: cover;
+                position: absolute;
                 top: 0;
                 left: 0;
-                z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                &:before {
-                    width: 100%;
-                }
             }
         }
-    }
-}
 
-/* In Between - 600px */
-@media only screen and (min-width: 37.5rem) {
-    #gallery-45 {
-        .cs-image-group {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 1fr;
+        .cs-picture1 {
+            grid-column: 1 / span 6;
+            grid-row: span 4;
         }
 
-        .cs-item {
-            grid-column: span 6;
+        .cs-picture2 {
+            grid-column: 7 / span 6;
+            grid-row: span 5;
+        }
+
+        .cs-picture3 {
+            grid-column: 1 / span 6;
+            grid-row: 5 / span 6;
+        }
+
+        .cs-picture4 {
+            grid-column: 7 / span 6;
+            grid-row: 6 / span 5;
+        }
+
+        .cs-picture5 {
+            grid-column: 1 / span 6;
+            grid-row: 11 / span 4;
+        }
+
+        .cs-picture6 {
+            grid-column: 7 / span 6;
+            grid-row: 11 / span 5;
+        }
+
+        .cs-picture7 {
+            grid-column: 1 / span 6;
+            grid-row: 15 / span 6;
+        }
+
+        .cs-picture8 {
+            grid-column: 7 / span 6;
+            grid-row: 16 / span 5;
         }
     }
 }
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #gallery-45 {
-        .cs-item {
-            grid-column: span 3;
+    #gallery-1086 {
+        .cs-image-group {
+            grid-template-rows: repeat(20, minmax(6rem, 1fr));
         }
     }
 }
+
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #gallery-1086 {
+        .cs-image-group {
+            max-width: calc(1280 / 16 * 1rem);
+            height: calc(785 / 16 * 1rem);
+            grid-template-rows: repeat(12, 1fr);
+        }
+
+        .cs-picture1 {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 7;
+        }
+
+        .cs-picture2 {
+            grid-column: 4 / span 3;
+            grid-row: 1 / span 10;
+        }
+
+        .cs-picture3 {
+            grid-column: 7 / span 3;
+            grid-row: 1 / span 5;
+        }
+
+        .cs-picture4 {
+            grid-column: 10 / span 3;
+            grid-row: 1 / span 7;
+        }
+
+        .cs-picture5 {
+            grid-column: 1 / span 3;
+            grid-row: 8 / span 13;
+        }
+
+        .cs-picture6 {
+            grid-column: 4 / span 3;
+            grid-row: 11 / span 10;
+        }
+
+        .cs-picture7 {
+            grid-column: 7 / span 3;
+            grid-row: 6 / span 15;
+        }
+
+        .cs-picture8 {
+            grid-column: 10 / span 3;
+            grid-row: 8 / span 13;
+        }
+    }
+}
+
+                                
 
                                 
 
@@ -924,7 +925,8 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #reviews-67 {
-        padding: 2rem 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+        padding: var(--sectionPadding);
+        background-color: #eaeaea;
 
         .cs-container {
             width: 100%;
@@ -971,7 +973,7 @@
             padding: calc(60 / 16 * 1rem) clamp(1rem, 3.2vw, 2rem) 0;
             /* 32px - 40px */
             padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-            box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
             border-radius: calc(8 / 16 * 1rem);
             background: #fff;
             position: relative;
