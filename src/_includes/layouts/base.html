@@ -37,6 +37,7 @@
         <link rel="stylesheet" href="/assets/css/root.css">
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/auth.js"></script>
 
         {% block head %}{% endblock %}
 
@@ -51,6 +52,7 @@
             {% block body %}{% endblock %}
         </main>
         {% include "sections/footer.html" %}
+        {% include "components/auth-dialog.html" %}
 
     </body>
 </html>
