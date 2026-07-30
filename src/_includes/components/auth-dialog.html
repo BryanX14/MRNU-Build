@@ -1,0 +1,88 @@
+<dialog class="auth-dialog" data-auth-dialog aria-labelledby="auth-title">
+    <div class="auth-panel">
+        <button class="auth-close" type="button" data-auth-close aria-label="Close account dialog">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="auth-brand" aria-hidden="true">
+            <span class="auth-brand-mark">MR</span>
+            <span>Maple Ridge New & Used</span>
+        </div>
+
+        <div class="auth-view" data-auth-view="login">
+            <p class="auth-eyebrow">Customer account</p>
+            <h2 id="auth-title">Welcome back</h2>
+            <p class="auth-intro">Sign in to access your account.</p>
+            <form class="auth-form" data-auth-form="login">
+                <label for="auth-login-email">Email address</label>
+                <input id="auth-login-email" name="email" type="email" autocomplete="email" required>
+                <label for="auth-login-password">Password</label>
+                <input id="auth-login-password" name="password" type="password" autocomplete="current-password" required>
+                <button class="auth-submit" type="submit">Sign in</button>
+            </form>
+            <div class="auth-links">
+                <button type="button" data-auth-switch="recovery">Forgot password?</button>
+                <button type="button" data-auth-switch="signup">Create an account</button>
+            </div>
+        </div>
+
+        <div class="auth-view" data-auth-view="signup" hidden>
+            <p class="auth-eyebrow">New customer</p>
+            <h2>Create your account</h2>
+            <p class="auth-intro">Use your email to set up a secure account.</p>
+            <form class="auth-form" data-auth-form="signup">
+                <label for="auth-signup-name">Full name</label>
+                <input id="auth-signup-name" name="name" type="text" autocomplete="name" required>
+                <label for="auth-signup-email">Email address</label>
+                <input id="auth-signup-email" name="email" type="email" autocomplete="email" required>
+                <label for="auth-signup-password">Password</label>
+                <input id="auth-signup-password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <p class="auth-hint">Use at least 8 characters.</p>
+                <button class="auth-submit" type="submit">Create account</button>
+            </form>
+            <div class="auth-links auth-links-single">
+                <button type="button" data-auth-switch="login">Already have an account?</button>
+            </div>
+        </div>
+
+        <div class="auth-view" data-auth-view="recovery" hidden>
+            <p class="auth-eyebrow">Password help</p>
+            <h2>Reset your password</h2>
+            <p class="auth-intro">Enter your email and we’ll send you a secure reset link.</p>
+            <form class="auth-form" data-auth-form="recovery">
+                <label for="auth-recovery-email">Email address</label>
+                <input id="auth-recovery-email" name="email" type="email" autocomplete="email" required>
+                <button class="auth-submit" type="submit">Send reset link</button>
+            </form>
+            <div class="auth-links auth-links-single">
+                <button type="button" data-auth-switch="login">Back to sign in</button>
+            </div>
+        </div>
+
+        <div class="auth-view" data-auth-view="new-password" hidden>
+            <p class="auth-eyebrow">Secure your account</p>
+            <h2 data-auth-password-title>Choose a new password</h2>
+            <p class="auth-intro">Enter a password with at least 8 characters.</p>
+            <form class="auth-form" data-auth-form="new-password">
+                <label for="auth-new-password">New password</label>
+                <input id="auth-new-password" name="password" type="password" autocomplete="new-password" minlength="8" required>
+                <button class="auth-submit" type="submit">Save password</button>
+            </form>
+        </div>
+
+        <div class="auth-view" data-auth-view="account" hidden>
+            <p class="auth-eyebrow">Signed in</p>
+            <h2>Your account</h2>
+            <div class="auth-profile">
+                <span class="auth-avatar" data-auth-avatar aria-hidden="true">A</span>
+                <div>
+                    <strong data-auth-name>Customer</strong>
+                    <span data-auth-email></span>
+                </div>
+            </div>
+            <button class="auth-submit auth-logout" type="button" data-auth-logout>Sign out</button>
+        </div>
+
+        <p class="auth-message" data-auth-message role="status" aria-live="polite" hidden></p>
+    </div>
+</dialog>
