@@ -1,12 +1,22 @@
 ---
-title: fdfsdfsd
-url: newarrivals/blog1
-description: fdfsdf
-author: sdfdsf
-date: 2026-07-30T02:56:31.554Z
+title: New Arrival – Complete Kitchen Cabinet Set
+url: newarrivals/kitchenset
+description: Newly salvaged complete kitchen cabinet set now in stock!
+author: Maple Ridge New & Used
+date: 2026-08-05T18:55:03.445Z
 tags:
   - post
-image: /assets/images/blog/landing.jpg
-imageAlt: fdsfd
+image: /assets/images/blog/img_6260.jpg
+imageAlt: Kitchen Cabinets
 ---
-sdfdsfd
+**Just arrived! We have a newly salvaged complete kitchen cabinet set now available.**
+
+This quality kitchen includes upper and lower cabinets and is ready for your next renovation or rental project. Buying salvaged is a great way to save money while getting solid, reusable cabinets.
+
+Visit us to see it in person before it's gone—our inventory changes regularly, and unique kitchen sets sell quickly.
+
+Maple Ridge New & Used Building Materials\
+23332 River Rd., Maple Ridge, BC
+
+Monday–Saturday: 8:30 AM – 5:00 PM\
+Sunday: 10:00 AM – 5:00 PM
