@@ -5,7 +5,26 @@ description: Newly salvaged complete kitchen cabinet set now in stock!
 author: Maple Ridge New & Used
 date: 2026-08-05T18:55:03.445Z
 tags:
-  - post
+  - Kitchen Cabinets
+  - Kitchen Set
+  - Kitchen Cabinets for Sale
+  - Cabinet Set
+  - Used Kitchen Cabinets
+  - Salvaged Kitchen Cabinets
+  - Kitchen Remodel
+  - Renovation
+  - Home Renovation
+  - Building Materials
+  - Cabinetry
+  - Base Cabinets
+  - Upper Cabinets
+  - Maple Ridge
+  - Lower Mainland
+  - Affordable Cabinets
+  - Kitchen Storage
+  - DIY Renovation
+  - Home Improvement
+  - MRNU
 image: /assets/images/blog/img_6260.jpg
 imageAlt: Kitchen Cabinets
 ---
