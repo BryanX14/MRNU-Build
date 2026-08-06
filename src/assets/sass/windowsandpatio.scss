@@ -77,6 +77,10 @@
             row-gap: calc(16/16 * 1rem);
         }
 
+        .cs-h3{
+            padding-bottom: 10px;
+        }
+
         .cs-link {
             text-decoration: none;
             display: flex;
@@ -597,8 +601,7 @@
         }
 
         .cs-topper{
-            color: var(--bodyTextColorWhite);
-            opacity: .7;
+            color: var(--primaryLight);
         }
 
         .cs-title {
@@ -686,7 +689,7 @@
                 width: calc(8/16 * 1rem);
                 height: calc(8/16 * 1rem);
                 margin-top: calc(8/16 * 1rem);
-                background-color: var(--bodyTextColorWhite);
+                background-color: var(--primaryLight);
                 display: block;
                 position: absolute;
                 top: 0;
