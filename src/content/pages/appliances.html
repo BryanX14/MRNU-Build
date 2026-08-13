@@ -1,13 +1,13 @@
 ---
-title: "Interior Doors | Maple Ridge New & Used Building Materials"
-description: "Browse quality new and used interior doors at Maple Ridge New & Used Building Materials. Find bedroom, bathroom, closet, and specialty doors at affordable prices with new inventory arriving regularly."
-permalink: "/interiordoors/"
+title: "Appliances | Maple Ridge New & Used Building Materials"
+description: "Shop quality new and used commercial doors at Maple Ridge New & Used Building Materials. Browse durable doors for retail, office, industrial, and commercial projects at great prices."
+permalink: "/appliances/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/interiordoors.css">
+    <link rel="stylesheet" href="/assets/css/appliances.css">
 {% endblock %}
 
 {% block body %}
@@ -18,19 +18,17 @@ permalink: "/interiordoors/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">Interior & Bifold Doors</span>
+            <span class="cs-int-title">Appliances</span>
             <div class="cs-breadcrumbs">
                 <a href="/" class="cs-link">Home</a>
-                <a href="/interiordoors/" class="cs-link cs-active">Interior & Bifold Doors</a>
+                <a href="/appliances/" class="cs-link cs-active">Appliances</a>
             </div>
         </div>
         <!--Background Image-->
         <picture class="cs-background">
-            <img src="/assets/images/intdoors/int-door-head.webp" alt="Kitchen cabinets at MRNU" width="2500" height="628" loading="eager" decoding="async">    
+            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
-                                                               
-                                
 
 <!-- ============================================ -->
 <!--              Interior Slab Doors             -->
@@ -208,11 +206,5 @@ permalink: "/interiordoors/"
     </section>
 </section>
 
-
-
-
-
-
-   
 
 {% endblock %}

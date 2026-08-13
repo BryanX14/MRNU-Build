@@ -531,6 +531,11 @@
             opacity: .8;
         }
 
+        .cs-text-prim{
+            color: var(--primaryLight);
+            font-weight: 600;
+        }
+
         .cs-card-group {
             width: 100%;
             margin: 0;
@@ -593,6 +598,10 @@
             justify-content: flex-end;
             position: relative;
             z-index: 1;
+        }
+
+        .cs-topper{
+            color: var(--primaryLight);
         }
 
         .cs-h3 {

@@ -8,8 +8,6 @@ permalink: "/other/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/other.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -28,22 +26,153 @@ permalink: "/other/"
         </div>
         <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
-   
+<!-- ============================================ -->
+<!--               Other Materials                -->
+<!-- ============================================ -->
+
+<section id="meet-us-1020">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Other Materials</span>
+            <h2 class="cs-title">More Building Materials at MRNU</h2>
+            <p class="cs-text">
+                Beyond our doors, windows, and cabinets, MRNU carries a wide variety of new and reclaimed building materials. Our inventory changes regularly, so the products shown below are just examples of what you may find in our yard. Contact us or stop by to check current availability.
+            </p>
+        </div>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Selection of appliances available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Tin Roofing</span>
+                    <span class="cs-job">New &amp; Used</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Plumbing fixtures and supplies available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Plumbing</span>
+                    <span class="cs-job">Fixtures &amp; Supplies</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Lighting fixtures available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Lighting</span>
+                    <span class="cs-job">Fixtures &amp; More</span>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Roofing materials available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Roofing</span>
+                    <span class="cs-job">Materials &amp; Supplies</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Assorted building hardware available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Hardware</span>
+                    <span class="cs-job">Assorted Hardware</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Aluminum railings available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Railings</span>
+                    <span class="cs-job">Aluminum Railings</span>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Electrical panels and supplies available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Electrical</span>
+                    <span class="cs-job">Panels &amp; Supplies</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Assorted home fixtures available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Fixtures</span>
+                    <span class="cs-job">Home &amp; Renovation</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Antiques and unique reclaimed items available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Antiques &amp; Unique Finds</span>
+                    <span class="cs-job">One-of-a-Kind Items</span>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Lumber and wood building materials available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Lumber &amp; Wood</span>
+                    <span class="cs-job">Building Materials</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Assorted renovation materials available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">Renovation Materials</span>
+                    <span class="cs-job">New &amp; Reclaimed</span>
+                </div>
+            </li>
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/images/indeximg/mrnu-walkthrough1.webp" alt="Assorted building materials and unique finds available at MRNU" width="305" height="335">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">And Much More</span>
+                    <span class="cs-job">Inventory Changes Regularly</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
 
 {% endblock %}
