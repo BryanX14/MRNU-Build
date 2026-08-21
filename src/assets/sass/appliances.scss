@@ -182,7 +182,7 @@
             padding: 0 calc(24/16 * 1rem);
             background-color: var(--primary);
             color: #fff;
-            border-radius: calc(4/16 * 1rem);
+            border-radius: 5px;
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -193,7 +193,7 @@
                 height: 100%;
                 background: #000;
                 opacity: 1;
-                border-radius: calc(4/16 * 1rem);
+                border-radius: 5px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -221,7 +221,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 5px;
             }
         }
 
@@ -638,7 +638,7 @@
                 height: 100%;
                 background: #000;
                 opacity: 1;
-                border-radius: calc(4/16 * 1rem);
+                border-radius: 5px;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -818,7 +818,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 5px;
             }
         }
 
@@ -830,7 +830,7 @@
             top: 0;
             bottom: calc(281/16 * 1em);
             left: 0;
-            border-radius: calc(16 / 16 * 1rem);
+            border-radius: 5px;
         }
 
         .cs-picture2 {
@@ -1801,7 +1801,7 @@
             max-height: calc(300 / 16 * 1rem);
             display: block;
             position: relative;
-            border-radius: calc(16 / 16 * 1rem);
+            border-radius: 5px;
 
             img {
                 position: absolute;
@@ -1811,7 +1811,7 @@
                 width: 100%;
                 /* Makes img tag act as a background image */
                 object-fit: cover;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 5px;
             }
         }
     }

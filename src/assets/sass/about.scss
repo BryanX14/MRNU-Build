@@ -48,7 +48,7 @@
             /* 16px - 32px */
             padding: clamp(1rem, 3vw, 2rem);
             background-color: #f7f7f7;
-            border-radius: calc(16 / 16 * 1rem);
+            border-radius: 5px;
             position: relative;
         }
 
@@ -98,7 +98,7 @@
         }
 
         .cs-picture {
-            border-radius: calc(24 / 16 * 1em);
+            border-radius: 5px;
             /* clips img tag corners */
             overflow: hidden;
             position: absolute;
@@ -248,7 +248,7 @@
             height: calc(80/16 * 1rem);
             /* 12px - 20px */
             margin-right: clamp(0.75rem, 3vw, 1.25rem);
-            border: 1px solid #f6e5db;
+            border: 1px solid var(--primaryLight);
             border-radius: 50%;
             display: flex;
             justify-content: center;
