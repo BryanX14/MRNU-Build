@@ -25,7 +25,7 @@ tags:
   - DIY Renovation
   - Home Improvement
   - MRNU
-image: /assets/images/blog/img_6412.jpg
+image: /assets/images/blog/kitchen2.jpg
 imageAlt: Kitchen Cabinets
 ---
 **Just arrived! We have a newly salvaged complete kitchen cabinet set now available.**
