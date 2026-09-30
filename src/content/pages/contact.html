@@ -74,34 +74,41 @@ permalink: "/contact/"
         </div>
 
         <!-- Form -->
-        <form id="cs-form-490" name="Contact Form" method="post">
-            <label class="cs-label">
-                Name
-                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="First Name">
-            </label>
+            <form 
+                id="cs-form-490" 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+            >
+                <input type="hidden" name="form-name" value="contact">
 
-            <label class="cs-label">
-                Email
-                <input class="cs-input" required type="email" id="email-490" name="email" placeholder="Email Address">
-            </label>
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-490" name="name" placeholder="First Name">
+                </label>
 
-            <label class="cs-label">
-                Phone
-                <input class="cs-input" required type="tel" id="phone-490" name="phone" placeholder="Phone Number">
-            </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="email" id="email-490" name="email" placeholder="Email Address">
+                </label>
 
-            <label class="cs-label">
-                How did you hear about us?
-                <input class="cs-input" type="text" id="find-490" name="product" placeholder="Google, Facebook, Instagram...">
-            </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="tel" id="phone-490" name="phone" placeholder="Phone Number">
+                </label>
 
-            <label class="cs-label-message">
-                Message
-                <textarea class="cs-input" required name="message" id="message-490" placeholder="Tell us how we can help..."></textarea>
-            </label>
+                <label class="cs-label">
+                    How did you hear about us?
+                    <input class="cs-input" type="text" id="find-490" name="referral" placeholder="Google, Facebook, Instagram...">
+                </label>
 
-            <button class="cs-button-solid" type="submit">Send Message</button>
-        </form>
+                <label class="cs-label-message">
+                    Message
+                    <textarea class="cs-input" required name="message" id="message-490" placeholder="Tell us how we can help..."></textarea>
+                </label>
+
+                <button class="cs-button-solid" type="submit">Send Message</button>
+            </form>
     </div>
 </section>
 
