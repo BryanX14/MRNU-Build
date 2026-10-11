@@ -1,5 +1,5 @@
 ---
-title: New $ Used Bathroom Vanities
+title: New & Used Bathroom Vanities
 url: bathroom-vanity
 description: Shop affordable used bathroom cabinets at Maple Ridge New & Used.
   Browse a changing selection of salvaged vanities with granite or arborite
