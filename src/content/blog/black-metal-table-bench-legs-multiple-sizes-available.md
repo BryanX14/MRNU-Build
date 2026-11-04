@@ -8,7 +8,7 @@ author: Maple Ridge New and Used
 date: 2026-11-04T21:58:05.908Z
 tags:
   - post
-image: /assets/images/blog/web-legs.png
+image: /assets/images/blog/web-legs-large.webp
 imageAlt: table-legs
 ---
 **Table & Bench Legs – Now Available!**
